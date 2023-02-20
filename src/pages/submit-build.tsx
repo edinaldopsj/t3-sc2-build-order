@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import { api } from "../utils/api";
 
-const SubmitBuild: NextPage = () => {
+const SubmitBuildPage: NextPage = () => {
   const createBuildMutation = api.builds.createBuild.useMutation();
 
   const [matchUp, setMatchUp] = useState("zvt");
@@ -70,4 +70,4 @@ const SubmitBuild: NextPage = () => {
   );
 };
 
-export default SubmitBuild;
+export default SubmitBuildPage;
